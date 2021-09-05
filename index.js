@@ -101,6 +101,21 @@ const displayComps = (comps) => {
       let week2 = new Date(Date.parse(comp.date) + 2 * 604800000);
       let week1 = new Date(Date.parse(comp.date) + 604800000);
       let week0 = new Date(Date.parse(comp.date));
+
+      let colabLink = comp.colab;
+      let colabTarget = '_blank';
+      if (Date.now() - week1 < 0) {
+        colabLink = 'javascript:void(0);';
+        colabTarget = '';
+      }
+
+      let codeLink = comp.code;
+      let codeTarget = '_blank';
+      if (Date.now() - week2 < 0) {
+        codeLink = 'javascript:void(0);';
+        codeTarget = '';
+      }
+
       return `
         <li class="transition2" data-modal-target=${'#' + comp.name}>
           <img class="stagger2" src=${comp.image}> </img>
@@ -130,7 +145,7 @@ const displayComps = (comps) => {
                   </div>
                 </div>
                 <div class="left-card">
-                  <a href=${comp.colab} target="_blank">
+                  <a data-colab=${week1.getTime()} href=${colabLink} target=${colabTarget}>
                     <img src="images/colab.svg"> </img>
                   </a>
                   <div class="caption">
@@ -141,7 +156,7 @@ const displayComps = (comps) => {
                   </div>
                 </div>
                 <div class="left-card">
-                  <a href=${comp.code} target="_blank">
+                  <a data-code=${week2.getTime()} href=${codeLink} target=${codeTarget}>
                     <img src="images/python.svg"> </img>
                   </a>
                   <div class="caption">
@@ -183,6 +198,7 @@ const displayComps = (comps) => {
         `;
     })
     .join('');
+
   compList.innerHTML = htmlString;
   const openModalButtons = document.querySelectorAll('[data-modal-target]');
   const overlay = document.getElementById('overlay');
@@ -207,6 +223,28 @@ const displayComps = (comps) => {
       const modal = button.closest('.modal');
       closeModal(modal);
     });
+  });
+
+  const colabLinks = document.querySelectorAll('[data-colab]');
+  colabLinks.forEach((link) => {
+    let time = parseInt(link.dataset.colab);
+    link.onclick = function () {
+      if (Date.now() - time < 0) {
+        let releaseDate = new Date(time);
+        alert('Scaffolding will be released on ' + releaseDate.toDateString());
+      }
+    };
+  });
+
+  const codeLinks = document.querySelectorAll('[data-code]');
+  codeLinks.forEach((link) => {
+    let time = parseInt(link.dataset.code);
+    link.onclick = function () {
+      if (Date.now() - time < 0) {
+        let releaseDate = new Date(time);
+        alert('Example Code will be released on ' + releaseDate.toDateString());
+      }
+    };
   });
 };
 

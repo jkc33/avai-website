@@ -509,7 +509,7 @@ input {
 
           .left-links {
             display: grid;
-            grid-template-columns: 9vw 9vw 9vw;
+            grid-template-columns: 11vw 11vw 11vw;
             grid-gap: 2vw;
             align-self: end;
             .left-card {
@@ -518,7 +518,7 @@ input {
                 -0.05vw -0.05vw 0.05vw #c4c4c4;
               border-radius: 1vw;
               height: 9vw;
-              width: 9vw;
+              width: 11vw;
               display: grid;
               grid-template-rows: 6vw auto;
               justify-items: center;
@@ -535,15 +535,16 @@ input {
                 display: grid;
                 align-items: center;
                 justify-items: center;
-                grid-template-columns: 5vw auto;
-                gap: 0.3vw;
+                grid-template-columns: 7.5vw auto;
+                gap: 0.1vw;
 
                 h1 {
-                  font-size: 0.65vw;
+                  font-size: 0.9vw;
+                  font-weight: 500;
                 }
 
                 p {
-                  font-size: 0.65vw;
+                  font-size: 0.8vw;
                   color: #6e00ff;
                   font-weight: 550;
                 }

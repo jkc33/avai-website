@@ -593,8 +593,8 @@ input {
 .compete-container #competition-list .modal.active .modal-container .modal-left .left-links {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 9vw 9vw 9vw;
-      grid-template-columns: 9vw 9vw 9vw;
+  -ms-grid-columns: 11vw 11vw 11vw;
+      grid-template-columns: 11vw 11vw 11vw;
   grid-gap: 2vw;
   -ms-grid-row-align: end;
       align-self: end;
@@ -606,7 +606,7 @@ input {
           box-shadow: 0.2vw 0.2vw 0.2vw #c4c4c4, -0.05vw -0.05vw 0.05vw #c4c4c4;
   border-radius: 1vw;
   height: 9vw;
-  width: 9vw;
+  width: 11vw;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 6vw auto;
@@ -632,17 +632,18 @@ input {
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
-  -ms-grid-columns: 5vw auto;
-      grid-template-columns: 5vw auto;
-  gap: 0.3vw;
+  -ms-grid-columns: 7.5vw auto;
+      grid-template-columns: 7.5vw auto;
+  gap: 0.1vw;
 }
 
 .compete-container #competition-list .modal.active .modal-container .modal-left .left-links .left-card .caption h1 {
-  font-size: 0.65vw;
+  font-size: 0.9vw;
+  font-weight: 500;
 }
 
 .compete-container #competition-list .modal.active .modal-container .modal-left .left-links .left-card .caption p {
-  font-size: 0.65vw;
+  font-size: 0.8vw;
   color: #6e00ff;
   font-weight: 550;
 }
