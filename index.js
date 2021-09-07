@@ -1,7 +1,7 @@
 let competitions = [
   {
-    name: 'Optiver Realized',
-    date: '09/02/2021',
+    name: 'Introduction to AI',
+    number: 'Section 1',
     image: 'images/comp-1.svg',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
     kaggle: 'https://www.kaggle.com/',
@@ -13,8 +13,8 @@ let competitions = [
     prize3: 'x1 Candy',
   },
   {
-    name: 'NFL Health/Safety',
-    date: '08/25/2021',
+    name: 'Key ML Models P. 1',
+    number: 'Section 2',
     image: 'images/comp-2.svg',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
     kaggle: 'https://www.kaggle.com/',
@@ -26,8 +26,8 @@ let competitions = [
     prize3: 'x1 Candy',
   },
   {
-    name: 'RSNA-MICCAI',
-    date: '08/18/2021',
+    name: 'Key ML Models P. 2',
+    number: 'Section 3',
     image: 'images/comp-3.svg',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
     kaggle: 'https://www.kaggle.com/',
@@ -39,8 +39,8 @@ let competitions = [
     prize3: 'x1 Candy',
   },
   {
-    name: 'LearnPlatform',
-    date: '08/11/2021',
+    name: 'Neural Networks',
+    number: 'Section 4',
     image: 'images/comp-4.svg',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
     kaggle: 'https://www.kaggle.com/',
@@ -52,8 +52,8 @@ let competitions = [
     prize3: 'x1 Candy',
   },
   {
-    name: 'G2Net Gravitational',
-    date: '08/04/2021',
+    name: 'Computer Vision',
+    number: 'Section 5',
     image: 'images/comp-5.svg',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
     kaggle: 'https://www.kaggle.com/',
@@ -65,8 +65,8 @@ let competitions = [
     prize3: 'x1 Candy',
   },
   {
-    name: 'Lux AI',
-    date: '07/28/2021',
+    name: 'Natural Language',
+    number: 'Section 6',
     image: 'images/comp-6.svg',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
     kaggle: 'https://www.kaggle.com/',
@@ -78,8 +78,8 @@ let competitions = [
     prize3: 'x1 Candy',
   },
   {
-    name: 'Google Landmark',
-    date: '07/21/2021',
+    name: 'GANs & Reinforcement',
+    number: 'Section 7',
     image: 'images/comp-7.svg',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
     kaggle: 'https://www.kaggle.com/',
@@ -119,14 +119,14 @@ const displayComps = (comps) => {
       return `
         <li class="transition2" data-modal-target=${'#' + comp.name}>
           <img class="stagger2" src=${comp.image}> </img>
-          <p class="stagger2" >${comp.date}</p>
+          <p class="stagger2" >${comp.number}</p>
           <h1 class="stagger2">${comp.name}</h1>
         </li>
         <div class="modal" id=${comp.name}>
           <div class="modal-container">
             <div class="modal-left">
               <div class="header">
-                <p class="modal-date">${comp.date}</p>
+                <p class="modal-date">${comp.number}</p>
                 <h1>${comp.name}</h1>
               </div>
               <div class="desc">
