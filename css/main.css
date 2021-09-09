@@ -46,6 +46,7 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  justify-items: center;
 }
 
 .nav-container header a {
@@ -205,6 +206,7 @@ input {
   display: grid;
   -ms-grid-rows: 10vw 5vw;
       grid-template-rows: 10vw 5vw;
+  cursor: pointer;
 }
 
 .skills ul li .icon-container {
@@ -222,6 +224,10 @@ input {
   color: #3b3b3b;
   font-size: 1vw;
   text-align: center;
+}
+
+.skills ul li:hover {
+  background: #f7f7f7;
 }
 
 .portfolio {
@@ -505,6 +511,10 @@ input {
   margin-top: 0;
 }
 
+.compete-container #competition-list li:hover {
+  background: #f7f7f7;
+}
+
 .compete-container #competition-list .modal {
   position: fixed;
   top: 50%;
@@ -560,8 +570,8 @@ input {
 .compete-container #competition-list .modal.active .modal-container .modal-left {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 10vw 10vw 10vw;
-      grid-template-rows: 10vw 10vw 10vw;
+  -ms-grid-rows: 10vw 22vw;
+      grid-template-rows: 10vw 22vw;
   gap: 2vw;
 }
 
@@ -577,25 +587,14 @@ input {
   font-size: 4vw;
 }
 
-.compete-container #competition-list .modal.active .modal-container .modal-left .desc {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-.compete-container #competition-list .modal.active .modal-container .modal-left .desc .modal-desc {
-  font-size: 1vw;
-  font-weight: normal;
-  color: #3b3b3b;
-  margin: 0;
-}
-
 .compete-container #competition-list .modal.active .modal-container .modal-left .left-links {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 11vw 11vw 11vw;
-      grid-template-columns: 11vw 11vw 11vw;
-  grid-gap: 2vw;
+  -ms-grid-columns: 25vw 25vw;
+      grid-template-columns: 25vw 25vw;
+  -ms-grid-rows: 11vw 11vw;
+      grid-template-rows: 11vw 11vw;
+  grid-gap: 1vw;
   -ms-grid-row-align: end;
       align-self: end;
 }
@@ -605,47 +604,65 @@ input {
   -webkit-box-shadow: 0.2vw 0.2vw 0.2vw #c4c4c4, -0.05vw -0.05vw 0.05vw #c4c4c4;
           box-shadow: 0.2vw 0.2vw 0.2vw #c4c4c4, -0.05vw -0.05vw 0.05vw #c4c4c4;
   border-radius: 1vw;
-  height: 9vw;
-  width: 11vw;
+  height: 10.25vw;
+  width: 23vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-bottom: 0.75vw;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 6vw auto;
-      grid-template-rows: 6vw auto;
-  justify-items: center;
+  -ms-grid-rows: 4.5vw auto;
+      grid-template-rows: 4.5vw auto;
 }
 
-.compete-container #competition-list .modal.active .modal-container .modal-left .left-links .left-card a {
-  -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
+.compete-container #competition-list .modal.active .modal-container .modal-left .left-links .left-card .box-top {
+  border-bottom: 0.1vw solid #000000;
 }
 
-.compete-container #competition-list .modal.active .modal-container .modal-left .left-links .left-card a img {
-  width: 4vw;
-  height: 4vw;
+.compete-container #competition-list .modal.active .modal-container .modal-left .left-links .left-card .box-top p {
+  font-weight: bold;
+  color: #6e00ff;
+  font-size: 0.9vw;
+  margin: 0;
+  margin-top: 0.75vw;
 }
 
-.compete-container #competition-list .modal.active .modal-container .modal-left .left-links .left-card .caption {
+.compete-container #competition-list .modal.active .modal-container .modal-left .left-links .left-card .box-top h1 {
+  font-size: 1.5vw;
+  margin: 0;
+}
+
+.compete-container #competition-list .modal.active .modal-container .modal-left .left-links .left-card .box-bottom {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 18vw 4vw;
+      grid-template-columns: 18vw 4vw;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  justify-items: center;
-  -ms-grid-columns: 7.5vw auto;
-      grid-template-columns: 7.5vw auto;
-  gap: 0.1vw;
 }
 
-.compete-container #competition-list .modal.active .modal-container .modal-left .left-links .left-card .caption h1 {
-  font-size: 0.9vw;
+.compete-container #competition-list .modal.active .modal-container .modal-left .left-links .left-card .box-bottom a {
+  display: block;
+  color: black;
   font-weight: 500;
+  text-decoration: underline;
+  font-size: 0.9vw;
 }
 
-.compete-container #competition-list .modal.active .modal-container .modal-left .left-links .left-card .caption p {
-  font-size: 0.8vw;
-  color: #6e00ff;
-  font-weight: 550;
+.compete-container #competition-list .modal.active .modal-container .modal-left .left-links .left-card .box-bottom .right a {
+  width: 4vw;
+  height: 4vw;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.compete-container #competition-list .modal.active .modal-container .modal-left .left-links .left-card:hover {
+  background: #f7f7f7;
+}
+
+.compete-container #competition-list .modal.active .modal-container .modal-left .left-links .left-card:hover img {
+  background: #f7f7f7;
 }
 
 .compete-container #competition-list .modal.active .modal-container .modal-right {
@@ -684,6 +701,10 @@ input {
 .compete-container #competition-list .modal.active .modal-container .modal-right .right-card .kaggle {
   width: 10vw;
   height: 10vw;
+}
+
+.compete-container #competition-list .modal.active .modal-container .modal-right .right-card:hover {
+  background: #f7f7f7;
 }
 
 .compete-container #competition-list .modal.active .modal-container .modal-right .bottom-card {
@@ -739,11 +760,15 @@ input {
 .compete-container #competition-list .modal.active .modal-container .modal-right .bottom-card .prizes p {
   margin: 0;
   color: #3b3b3b;
-  font-size: 0.8vw;
+  font-size: 1vw;
 }
 
 .compete-container #competition-list .modal.active .modal-container .modal-right .bottom-card .prizes p strong {
   color: #6e00ff;
+}
+
+.compete-container #competition-list .modal.active .modal-container .modal-right .bottom-card:hover {
+  background: #f7f7f7;
 }
 
 #overlay {

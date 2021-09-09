@@ -40,6 +40,7 @@ input {
     gap: 3vw;
     padding-left: 12vw;
     align-items: center;
+    justify-items: center;
 
     a {
       color: #00f7ff;
@@ -183,6 +184,7 @@ input {
       padding: 3vw;
       display: grid;
       grid-template-rows: 10vw 5vw;
+      cursor: pointer;
 
       .icon-container {
         display: grid;
@@ -195,6 +197,10 @@ input {
         font-size: 1vw;
         text-align: center;
       }
+    }
+
+    li:hover {
+      background: #f7f7f7;
     }
   }
 }
@@ -433,6 +439,10 @@ input {
       }
     }
 
+    li:hover {
+      background: #f7f7f7;
+    }
+
     .modal {
       position: fixed;
       top: 50%;
@@ -479,7 +489,7 @@ input {
 
         .modal-left {
           display: grid;
-          grid-template-rows: 10vw 10vw 10vw;
+          grid-template-rows: 10vw 22vw;
           gap: 2vw;
 
           .header {
@@ -496,58 +506,69 @@ input {
             }
           }
 
-          .desc {
-            align-self: center;
-
-            .modal-desc {
-              font-size: 1vw;
-              font-weight: normal;
-              color: #3b3b3b;
-              margin: 0;
-            }
-          }
-
           .left-links {
             display: grid;
-            grid-template-columns: 11vw 11vw 11vw;
-            grid-gap: 2vw;
+            grid-template-columns: 25vw 25vw;
+            grid-template-rows: 11vw 11vw;
+            grid-gap: 1vw;
             align-self: end;
             .left-card {
               background: white;
               box-shadow: 0.2vw 0.2vw 0.2vw #c4c4c4,
                 -0.05vw -0.05vw 0.05vw #c4c4c4;
               border-radius: 1vw;
-              height: 9vw;
-              width: 11vw;
+              height: 10.25vw;
+              width: 23vw;
+              padding-left: 1vw;
+              padding-right: 1vw;
+              padding-bottom: 0.75vw;
               display: grid;
-              grid-template-rows: 6vw auto;
-              justify-items: center;
+              grid-template-rows: 4.5vw auto;
 
-              a {
-                align-self: end;
-                img {
-                  width: 4vw;
-                  height: 4vw;
-                }
-              }
-
-              .caption {
-                display: grid;
-                align-items: center;
-                justify-items: center;
-                grid-template-columns: 7.5vw auto;
-                gap: 0.1vw;
-
-                h1 {
-                  font-size: 0.9vw;
-                  font-weight: 500;
-                }
+              .box-top {
+                border-bottom: 0.1vw solid #000000;
 
                 p {
-                  font-size: 0.8vw;
+                  font-weight: bold;
                   color: #6e00ff;
-                  font-weight: 550;
+                  font-size: 0.9vw;
+                  margin: 0;
+                  margin-top: 0.75vw;
                 }
+
+                h1 {
+                  font-size: 1.5vw;
+                  margin: 0;
+                }
+              }
+              
+              .box-bottom {
+                display: grid;
+                grid-template-columns: 18vw 4vw;
+                align-items: center;
+
+                a {
+                  display: block;
+                  color: black;
+                  font-weight: 500;
+                  text-decoration: underline;
+                  font-size: 0.9vw;
+                }
+
+                .right a {
+                  width: 4vw;
+                  height: 4vw;
+                  justify-self: end;
+                }
+
+              }
+            }
+
+            .left-card:hover {
+              background: #f7f7f7;
+
+              img {
+                background: #f7f7f7;
               }
             }
           }
@@ -581,6 +602,10 @@ input {
               width: 10vw;
               height: 10vw;
             }
+          }
+
+          .right-card:hover {
+            background: #f7f7f7;
           }
 
           .bottom-card {
@@ -626,9 +651,13 @@ input {
                 }
 
                 color: #3b3b3b;
-                font-size: 0.8vw;
+                font-size: 1vw;
               }
             }
+          }
+
+          .bottom-card:hover {
+            background: #f7f7f7;
           }
         }
       }

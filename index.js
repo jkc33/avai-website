@@ -1,94 +1,409 @@
 let competitions = [
   {
     name: 'Introduction to AI',
+    id: 'section1',
     number: 'Section 1',
     image: 'images/comp-1.svg',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
-    kaggle: 'https://www.kaggle.com/',
-    slides: 'https://docs.google.com/presentation/u/0/',
-    colab: 'https://colab.research.google.com/',
-    code: 'https://www.python.org/',
-    prize1: 'x2 Candy',
-    prize2: 'x1 Candy',
-    prize3: 'x1 Candy',
+    kaggle: '#',
+    date1: '09/28 - Topic 1.1',
+    topic1: 'TBD',
+    date2: '10/05 - Topic 1.2',
+    topic2: 'TBD',
+    date3: '10/19 - Topic 1.3',
+    topic3: 'TBD',
+    date4: '10/26 - Topic 1.4',
+    topic4: 'TBD',
+    prize1: 'TBD',
+    prize2: 'TBD',
+    prize3: 'TBD',
+    mat11: '',
+    link11: '#',
+    mat12: '',
+    link12: '#',
+    mat13: '',
+    link13: '#',
+    mat14: '',
+    link14: '#',
+    mat21: '',
+    link21: '#',
+    mat22: '',
+    link22: '#',
+    mat23: '',
+    link23: '#',
+    mat24: '',
+    link24: '#',
+    mat31: '',
+    link31: '#',
+    mat32: '',
+    link32: '#',
+    mat33: '',
+    link33: '#',
+    mat34: '',
+    link34: '#',
+    mat41: '',
+    link41: '#',
+    mat42: '',
+    link42: '#',
+    mat43: '',
+    link43: '#',
+    mat44: '',
+    link44: '#',
+    activityimg1: '',
+    activitylink1: '#',
+    activityimg2: '',
+    activitylink2: '#',
+    activityimg3: '',
+    activitylink3: '#',
+    activityimg4: '',
+    activitylink4: '#'
   },
   {
     name: 'Key ML Models P. 1',
+    id: 'section2',
     number: 'Section 2',
     image: 'images/comp-2.svg',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
-    kaggle: 'https://www.kaggle.com/',
-    slides: 'https://docs.google.com/presentation/u/0/',
-    colab: 'https://colab.research.google.com/',
-    code: 'https://www.python.org/',
-    prize1: 'x2 Candy',
-    prize2: 'x1 Candy',
-    prize3: 'x1 Candy',
+    kaggle: '#',
+    date1: '11/02 - Topic 2.1',
+    topic1: 'TBD',
+    date2: '11/09 - Topic 2.2',
+    topic2: 'TBD',
+    date3: '11/16 - Topic 2.3',
+    topic3: 'TBD',
+    date4: '11/30 - Topic 2.4',
+    topic4: 'TBD',
+    prize1: 'TBD',
+    prize2: 'TBD',
+    prize3: 'TBD',
+    mat11: '',
+    link11: '#',
+    mat12: '',
+    link12: '#',
+    mat13: '',
+    link13: '#',
+    mat14: '',
+    link14: '#',
+    mat21: '',
+    link21: '#',
+    mat22: '',
+    link22: '#',
+    mat23: '',
+    link23: '#',
+    mat24: '',
+    link24: '#',
+    mat31: '',
+    link31: '#',
+    mat32: '',
+    link32: '#',
+    mat33: '',
+    link33: '#',
+    mat34: '',
+    link34: '#',
+    mat41: '',
+    link41: '#',
+    mat42: '',
+    link42: '#',
+    mat43: '',
+    link43: '#',
+    mat44: '',
+    link44: '#',
+    activityimg1: '',
+    activitylink1: '#',
+    activityimg2: '',
+    activitylink2: '#',
+    activityimg3: '',
+    activitylink3: '#',
+    activityimg4: '',
+    activitylink4: '#'
   },
   {
     name: 'Key ML Models P. 2',
+    id: 'section3',
     number: 'Section 3',
     image: 'images/comp-3.svg',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
-    kaggle: 'https://www.kaggle.com/',
-    slides: 'https://docs.google.com/presentation/u/0/',
-    colab: 'https://colab.research.google.com/',
-    code: 'https://www.python.org/',
-    prize1: 'x2 Candy',
-    prize2: 'x1 Candy',
-    prize3: 'x1 Candy',
+    kaggle: '#',
+    date1: '12/07 - Topic 3.1',
+    topic1: 'TBD',
+    date2: '12/14 - Topic 3.2',
+    topic2: 'TBD',
+    date3: '01/11 - Topic 3.3',
+    topic3: 'TBD',
+    date4: '01/18 - Topic 3.4',
+    topic4: 'TBD',
+    prize1: 'TBD',
+    prize2: 'TBD',
+    prize3: 'TBD',
+    mat11: '',
+    link11: '#',
+    mat12: '',
+    link12: '#',
+    mat13: '',
+    link13: '#',
+    mat14: '',
+    link14: '#',
+    mat21: '',
+    link21: '#',
+    mat22: '',
+    link22: '#',
+    mat23: '',
+    link23: '#',
+    mat24: '',
+    link24: '#',
+    mat31: '',
+    link31: '#',
+    mat32: '',
+    link32: '#',
+    mat33: '',
+    link33: '#',
+    mat34: '',
+    link34: '#',
+    mat41: '',
+    link41: '#',
+    mat42: '',
+    link42: '#',
+    mat43: '',
+    link43: '#',
+    mat44: '',
+    link44: '#',
+    activityimg1: '',
+    activitylink1: '#',
+    activityimg2: '',
+    activitylink2: '#',
+    activityimg3: '',
+    activitylink3: '#',
+    activityimg4: '',
+    activitylink4: '#'
   },
   {
     name: 'Neural Networks',
+    id: 'section4',
     number: 'Section 4',
     image: 'images/comp-4.svg',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
-    kaggle: 'https://www.kaggle.com/',
-    slides: 'https://docs.google.com/presentation/u/0/',
-    colab: 'https://colab.research.google.com/',
-    code: 'https://www.python.org/',
-    prize1: 'x2 Candy',
-    prize2: 'x1 Candy',
-    prize3: 'x1 Candy',
+    kaggle: '#',
+    date1: '01/25 - Topic 4.1',
+    topic1: 'TBD',
+    date2: '02/01 - Topic 4.2',
+    topic2: 'TBD',
+    date3: '02/08 - Topic 4.3',
+    topic3: 'TBD',
+    date4: '02/15 - Topic 4.4',
+    topic4: 'TBD',
+    prize1: 'TBD',
+    prize2: 'TBD',
+    prize3: 'TBD',
+    mat11: '',
+    link11: '#',
+    mat12: '',
+    link12: '#',
+    mat13: '',
+    link13: '#',
+    mat14: '',
+    link14: '#',
+    mat21: '',
+    link21: '#',
+    mat22: '',
+    link22: '#',
+    mat23: '',
+    link23: '#',
+    mat24: '',
+    link24: '#',
+    mat31: '',
+    link31: '#',
+    mat32: '',
+    link32: '#',
+    mat33: '',
+    link33: '#',
+    mat34: '',
+    link34: '#',
+    mat41: '',
+    link41: '#',
+    mat42: '',
+    link42: '#',
+    mat43: '',
+    link43: '#',
+    mat44: '',
+    link44: '#',
+    activityimg1: '',
+    activitylink1: '#',
+    activityimg2: '',
+    activitylink2: '#',
+    activityimg3: '',
+    activitylink3: '#',
+    activityimg4: '',
+    activitylink4: '#'
   },
   {
     name: 'Computer Vision',
+    id: 'section5',
     number: 'Section 5',
     image: 'images/comp-5.svg',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
-    kaggle: 'https://www.kaggle.com/',
-    slides: 'https://docs.google.com/presentation/u/0/',
-    colab: 'https://colab.research.google.com/',
-    code: 'https://www.python.org/',
-    prize1: 'x2 Candy',
-    prize2: 'x1 Candy',
-    prize3: 'x1 Candy',
+    kaggle: '#',
+    date1: '02/22 - Topic 5.1',
+    topic1: 'TBD',
+    date2: '03/01 - Topic 5.2',
+    topic2: 'TBD',
+    date3: '03/08 - Topic 5.3',
+    topic3: 'TBD',
+    date4: '03/15 - Topic 5.4',
+    topic4: 'TBD',
+    prize1: 'TBD',
+    prize2: 'TBD',
+    prize3: 'TBD',
+    mat11: '',
+    link11: '#',
+    mat12: '',
+    link12: '#',
+    mat13: '',
+    link13: '#',
+    mat14: '',
+    link14: '#',
+    mat21: '',
+    link21: '#',
+    mat22: '',
+    link22: '#',
+    mat23: '',
+    link23: '#',
+    mat24: '',
+    link24: '#',
+    mat31: '',
+    link31: '#',
+    mat32: '',
+    link32: '#',
+    mat33: '',
+    link33: '#',
+    mat34: '',
+    link34: '#',
+    mat41: '',
+    link41: '#',
+    mat42: '',
+    link42: '#',
+    mat43: '',
+    link43: '#',
+    mat44: '',
+    link44: '#',
+    activityimg1: '',
+    activitylink1: '#',
+    activityimg2: '',
+    activitylink2: '#',
+    activityimg3: '',
+    activitylink3: '#',
+    activityimg4: '',
+    activitylink4: '#'
   },
   {
     name: 'Natural Language',
+    id: 'section6',
     number: 'Section 6',
     image: 'images/comp-6.svg',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
-    kaggle: 'https://www.kaggle.com/',
-    slides: 'https://docs.google.com/presentation/u/0/',
-    colab: 'https://colab.research.google.com/',
-    code: 'https://www.python.org/',
-    prize1: 'x2 Candy',
-    prize2: 'x1 Candy',
-    prize3: 'x1 Candy',
+    kaggle: '#',
+    date1: '03/22 - Topic 6.1',
+    topic1: 'TBD',
+    date2: '03/29 - Topic 6.2',
+    topic2: 'TBD',
+    date3: '04/12 - Topic 6.3',
+    topic3: 'TBD',
+    date4: '04/19 - Topic 6.4',
+    topic4: 'TBD',
+    prize1: 'TBD',
+    prize2: 'TBD',
+    prize3: 'TBD',
+    mat11: '',
+    link11: '#',
+    mat12: '',
+    link12: '#',
+    mat13: '',
+    link13: '#',
+    mat14: '',
+    link14: '#',
+    mat21: '',
+    link21: '#',
+    mat22: '',
+    link22: '#',
+    mat23: '',
+    link23: '#',
+    mat24: '',
+    link24: '#',
+    mat31: '',
+    link31: '#',
+    mat32: '',
+    link32: '#',
+    mat33: '',
+    link33: '#',
+    mat34: '',
+    link34: '#',
+    mat41: '',
+    link41: '#',
+    mat42: '',
+    link42: '#',
+    mat43: '',
+    link43: '#',
+    mat44: '',
+    link44: '#',
+    activityimg1: '',
+    activitylink1: '#',
+    activityimg2: '',
+    activitylink2: '#',
+    activityimg3: '',
+    activitylink3: '#',
+    activityimg4: '',
+    activitylink4: '#'
   },
   {
     name: 'GANs & Reinforcement',
+    id: 'section7',
     number: 'Section 7',
     image: 'images/comp-7.svg',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
-    kaggle: 'https://www.kaggle.com/',
-    slides: 'https://docs.google.com/presentation/u/0/',
-    colab: 'https://colab.research.google.com/',
-    code: 'https://www.python.org/',
-    prize1: 'x2 Candy',
-    prize2: 'x1 Candy',
-    prize3: 'x1 Candy',
+    kaggle: '#',
+    date1: '04/26 - Topic 7.1',
+    topic1: 'TBD',
+    date2: '05/03 - Topic 7.2',
+    topic2: 'TBD',
+    date3: '05/10 - Topic 7.3',
+    topic3: 'TBD',
+    date4: '05/17 - Topic 7.4',
+    topic4: 'TBD',
+    prize1: 'TBD',
+    prize2: 'TBD',
+    prize3: 'TBD',
+    mat11: '',
+    link11: '#',
+    mat12: '',
+    link12: '#',
+    mat13: '',
+    link13: '#',
+    mat14: '',
+    link14: '#',
+    mat21: '',
+    link21: '#',
+    mat22: '',
+    link22: '#',
+    mat23: '',
+    link23: '#',
+    mat24: '',
+    link24: '#',
+    mat31: '',
+    link31: '#',
+    mat32: '',
+    link32: '#',
+    mat33: '',
+    link33: '#',
+    mat34: '',
+    link34: '#',
+    mat41: '',
+    link41: '#',
+    mat42: '',
+    link42: '#',
+    mat43: '',
+    link43: '#',
+    mat44: '',
+    link44: '#',
+    activityimg1: '',
+    activitylink1: '#',
+    activityimg2: '',
+    activitylink2: '#',
+    activityimg3: '',
+    activitylink3: '#',
+    activityimg4: '',
+    activitylink4: '#'
   },
 ];
 
@@ -98,72 +413,86 @@ const searchBar = document.getElementById('search-bar');
 const displayComps = (comps) => {
   const htmlString = comps
     .map((comp) => {
-      let week2 = new Date(Date.parse(comp.date) + 2 * 604800000);
-      let week1 = new Date(Date.parse(comp.date) + 604800000);
-      let week0 = new Date(Date.parse(comp.date));
-
-      let colabLink = comp.colab;
-      let colabTarget = '_blank';
-      if (Date.now() - week1 < 0) {
-        colabLink = 'javascript:void(0);';
-        colabTarget = '';
-      }
-
-      let codeLink = comp.code;
-      let codeTarget = '_blank';
-      if (Date.now() - week2 < 0) {
-        codeLink = 'javascript:void(0);';
-        codeTarget = '';
-      }
-
       return `
-        <li class="transition2" data-modal-target=${'#' + comp.name}>
+        <li class="transition2" data-modal-target=${'#' + comp.id}>
           <img class="stagger2" src=${comp.image}> </img>
           <p class="stagger2" >${comp.number}</p>
           <h1 class="stagger2">${comp.name}</h1>
         </li>
-        <div class="modal" id=${comp.name}>
+        <div class="modal" id=${comp.id}>
           <div class="modal-container">
             <div class="modal-left">
               <div class="header">
                 <p class="modal-date">${comp.number}</p>
                 <h1>${comp.name}</h1>
               </div>
-              <div class="desc">
-                <p class="modal-desc">${comp.desc}</p>
-              </div>
               <div class="left-links">
                 <div class="left-card">
-                  <a href=${comp.slides} target="_blank">
-                    <img src="images/slides.svg"> </img>
-                  </a>
-                  <div class="caption">
-                    <h1>Topic Slides</h1>
-                    <p>${(week0.getMonth() + 1).toString()}/${week0
-        .getDate()
-        .toString()}</p>
+                  <div class="box-top">
+                    <p>${comp.date1}</p>
+                    <h1>${comp.topic1}</h1>
+                  </div>
+                  <div class="box-bottom">
+                    <div class="left">
+                      <a href=${comp.link11}>${comp.mat11}</a>
+                      <a href=${comp.link12}>${comp.mat12}</a>
+                      <a href=${comp.link13}>${comp.mat13}</a>
+                      <a href=${comp.link14}>${comp.mat14}</a>
+                    </div>
+                    <div class="right">
+                      <a href=${comp.activitylink1}><img src=${comp.activityimg1}></a>
+                    </div>
                   </div>
                 </div>
                 <div class="left-card">
-                  <a data-colab=${week1.getTime()} href=${colabLink} target=${colabTarget}>
-                    <img src="images/colab.svg"> </img>
-                  </a>
-                  <div class="caption">
-                    <h1>Scaffolding</h1>
-                    <p>${(week1.getMonth() + 1).toString()}/${week1
-        .getDate()
-        .toString()}</p>
+                  <div class="box-top">
+                    <p>${comp.date2}</p>
+                    <h1>${comp.topic2}</h1>
+                  </div>
+                  <div class="box-bottom">
+                    <div class="left">
+                      <a href=${comp.link21}>${comp.mat21}</a>
+                      <a href=${comp.link22}>${comp.mat22}</a>
+                      <a href=${comp.link23}>${comp.mat23}</a>
+                      <a href=${comp.link24}>${comp.mat24}</a>
+                    </div>
+                    <div class="right">
+                      <a href=${comp.activitylink2}><img src=${comp.activityimg2}></a>
+                    </div>
                   </div>
                 </div>
                 <div class="left-card">
-                  <a data-code=${week2.getTime()} href=${codeLink} target=${codeTarget}>
-                    <img src="images/python.svg"> </img>
-                  </a>
-                  <div class="caption">
-                    <h1>Example Code</h1>
-                    <p>${(week2.getMonth() + 1).toString()}/${week2
-        .getDate()
-        .toString()}</p>
+                  <div class="box-top">
+                    <p>${comp.date3}</p>
+                    <h1>${comp.topic3}</h1>
+                  </div>
+                  <div class="box-bottom">
+                    <div class="left">
+                      <a href=${comp.link31}>${comp.mat31}</a>
+                      <a href=${comp.link32}>${comp.mat32}</a>
+                      <a href=${comp.link33}>${comp.mat33}</a>
+                      <a href=${comp.link34}>${comp.mat34}</a>
+                    </div>
+                    <div class="right">
+                      <a href=${comp.activitylink3}><img src=${comp.activityimg3}></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="left-card">
+                  <div class="box-top">
+                    <p>${comp.date4}</p>
+                    <h1>${comp.topic4}</h1>
+                  </div>
+                  <div class="box-bottom">
+                    <div class="left">
+                      <a href=${comp.link41}>${comp.mat41}</a>
+                      <a href=${comp.link42}>${comp.mat42}</a>
+                      <a href=${comp.link43}>${comp.mat43}</a>
+                      <a href=${comp.link44}>${comp.mat44}</a>
+                    </div>
+                    <div class="right">
+                      <a href=${comp.activitylink4}><img src=${comp.activityimg4}></a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -171,7 +500,7 @@ const displayComps = (comps) => {
             <div class="modal-right">
               <img data-close-button class="close-button" src="images/exit.svg"> </img>
               <div class="right-card">
-                <a href=${comp.kaggle} target="_blank">
+                <a id="kaggle" href=${comp.kaggle}>
                   <img class="kaggle" src="images/kaggle.svg"> </img>
                 </a>
               </div>
@@ -224,28 +553,6 @@ const displayComps = (comps) => {
       closeModal(modal);
     });
   });
-
-  const colabLinks = document.querySelectorAll('[data-colab]');
-  colabLinks.forEach((link) => {
-    let time = parseInt(link.dataset.colab);
-    link.onclick = function () {
-      if (Date.now() - time < 0) {
-        let releaseDate = new Date(time);
-        alert('Scaffolding will be released on ' + releaseDate.toDateString());
-      }
-    };
-  });
-
-  const codeLinks = document.querySelectorAll('[data-code]');
-  codeLinks.forEach((link) => {
-    let time = parseInt(link.dataset.code);
-    link.onclick = function () {
-      if (Date.now() - time < 0) {
-        let releaseDate = new Date(time);
-        alert('Example Code will be released on ' + releaseDate.toDateString());
-      }
-    };
-  });
 };
 
 displayComps(competitions);
@@ -256,7 +563,14 @@ searchBar.addEventListener('keyup', (e) => {
   const filtered = competitions.filter((comp) => {
     return (
       comp.name.toLowerCase().includes(searchString) ||
-      comp.date.toLowerCase().includes(searchString)
+      comp.date1.toLowerCase().includes(searchString) ||
+      comp.date2.toLowerCase().includes(searchString) ||
+      comp.date3.toLowerCase().includes(searchString) ||
+      comp.date4.toLowerCase().includes(searchString) ||
+      comp.topic1.toLowerCase().includes(searchString) ||
+      comp.topic2.toLowerCase().includes(searchString) ||
+      comp.topic3.toLowerCase().includes(searchString) ||
+      comp.topic4.toLowerCase().includes(searchString)
     );
   });
   displayComps(filtered);
