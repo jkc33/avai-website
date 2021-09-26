@@ -6,7 +6,7 @@ let competitions = [
     image: 'images/comp-1.svg',
     kaggle: '#',
     date1: '09/28 - Topic 1.1',
-    topic1: 'TBD',
+    topic1: 'Introductory Meeting',
     date2: '10/05 - Topic 1.2',
     topic2: 'TBD',
     date3: '10/19 - Topic 1.3',
@@ -16,8 +16,9 @@ let competitions = [
     prize1: 'TBD',
     prize2: 'TBD',
     prize3: 'TBD',
-    mat11: '',
-    link11: '#',
+    mat11: 'First Meeting Slides',
+    link11:
+      'https://docs.google.com/presentation/d/1n9VOqYWrl3QFYAeKTOcXzB6wQ97fWvec932NVQ-Ce18/edit?usp=sharing',
     mat12: '',
     link12: '#',
     mat13: '',
@@ -55,7 +56,7 @@ let competitions = [
     activityimg3: '',
     activitylink3: '#',
     activityimg4: '',
-    activitylink4: '#'
+    activitylink4: '#',
   },
   {
     name: 'Key ML Models P. 1',
@@ -113,7 +114,7 @@ let competitions = [
     activityimg3: '',
     activitylink3: '#',
     activityimg4: '',
-    activitylink4: '#'
+    activitylink4: '#',
   },
   {
     name: 'Key ML Models P. 2',
@@ -171,7 +172,7 @@ let competitions = [
     activityimg3: '',
     activitylink3: '#',
     activityimg4: '',
-    activitylink4: '#'
+    activitylink4: '#',
   },
   {
     name: 'Neural Networks',
@@ -229,7 +230,7 @@ let competitions = [
     activityimg3: '',
     activitylink3: '#',
     activityimg4: '',
-    activitylink4: '#'
+    activitylink4: '#',
   },
   {
     name: 'Computer Vision',
@@ -287,7 +288,7 @@ let competitions = [
     activityimg3: '',
     activitylink3: '#',
     activityimg4: '',
-    activitylink4: '#'
+    activitylink4: '#',
   },
   {
     name: 'Natural Language',
@@ -345,7 +346,7 @@ let competitions = [
     activityimg3: '',
     activitylink3: '#',
     activityimg4: '',
-    activitylink4: '#'
+    activitylink4: '#',
   },
   {
     name: 'GANs & Reinforcement',
@@ -403,7 +404,7 @@ let competitions = [
     activityimg3: '',
     activitylink3: '#',
     activityimg4: '',
-    activitylink4: '#'
+    activitylink4: '#',
   },
 ];
 
@@ -440,7 +441,9 @@ const displayComps = (comps) => {
                       <a href=${comp.link14}>${comp.mat14}</a>
                     </div>
                     <div class="right">
-                      <a href=${comp.activitylink1}><img src=${comp.activityimg1}></a>
+                      <a href=${comp.activitylink1}><img src=${
+        comp.activityimg1
+      }></a>
                     </div>
                   </div>
                 </div>
@@ -457,7 +460,9 @@ const displayComps = (comps) => {
                       <a href=${comp.link24}>${comp.mat24}</a>
                     </div>
                     <div class="right">
-                      <a href=${comp.activitylink2}><img src=${comp.activityimg2}></a>
+                      <a href=${comp.activitylink2}><img src=${
+        comp.activityimg2
+      }></a>
                     </div>
                   </div>
                 </div>
@@ -474,7 +479,9 @@ const displayComps = (comps) => {
                       <a href=${comp.link34}>${comp.mat34}</a>
                     </div>
                     <div class="right">
-                      <a href=${comp.activitylink3}><img src=${comp.activityimg3}></a>
+                      <a href=${comp.activitylink3}><img src=${
+        comp.activityimg3
+      }></a>
                     </div>
                   </div>
                 </div>
@@ -491,7 +498,9 @@ const displayComps = (comps) => {
                       <a href=${comp.link44}>${comp.mat44}</a>
                     </div>
                     <div class="right">
-                      <a href=${comp.activitylink4}><img src=${comp.activityimg4}></a>
+                      <a href=${comp.activitylink4}><img src=${
+        comp.activityimg4
+      }></a>
                     </div>
                   </div>
                 </div>
