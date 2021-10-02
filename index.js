@@ -6,9 +6,9 @@ let competitions = [
     image: 'images/comp-1.svg',
     kaggle: '#',
     date1: '09/28 - Topic 1.1',
-    topic1: 'Introductory Meeting',
+    topic1: 'Intro Meeting',
     date2: '10/05 - Topic 1.2',
-    topic2: 'TBD',
+    topic2: 'Python',
     date3: '10/19 - Topic 1.3',
     topic3: 'TBD',
     date4: '10/26 - Topic 1.4',
@@ -16,23 +16,25 @@ let competitions = [
     prize1: 'TBD',
     prize2: 'TBD',
     prize3: 'TBD',
-    mat11: 'First Meeting Slides',
+    mat11: '1st Meeting Slides',
     link11:
       'https://docs.google.com/presentation/d/1n9VOqYWrl3QFYAeKTOcXzB6wQ97fWvec932NVQ-Ce18/edit?usp=sharing',
-    mat12: '',
-    link12: '#',
-    mat13: '',
-    link13: '#',
+    mat12: 'MNIST Model Code',
+    link12: 'https://github.com/JiakangChenBuff/mnist-model',
+    mat13: 'AV AI Demo Site Repo',
+    link13: 'https://github.com/subatuba21/ai-club-demos-site',
     mat14: '',
     link14: '#',
-    mat21: '',
-    link21: '#',
-    mat22: '',
-    link22: '#',
-    mat23: '',
-    link23: '#',
-    mat24: '',
-    link24: '#',
+    mat21: '2nd Meeting Slides',
+    link21:
+      'https://docs.google.com/presentation/d/10QRyTpSLFiEu2YDDK1I8lxjgumPpMPH7Qlv3GOZft1k/edit?usp=sharing',
+    mat22: 'Intro to Python Video',
+    link22: 'https://www.youtube.com/watch?v=I2wURDqiXdM',
+    mat23: 'Python Packages Article',
+    link23:
+      'https://www.udacity.com/blog/2021/01/what-is-a-python-package.html',
+    mat24: 'Kaggle Python Course',
+    link24: 'https://www.kaggle.com/learn/python',
     mat31: '',
     link31: '#',
     mat32: '',
@@ -49,14 +51,18 @@ let competitions = [
     link43: '#',
     mat44: '',
     link44: '#',
-    activityimg1: '',
-    activitylink1: '#',
-    activityimg2: '',
-    activitylink2: '#',
+    activityimg1: 'images/vscode.svg',
+    activitylink1: 'https://condescending-varahamihira-35fa1a.netlify.app/',
+    activitydesc1: 'Live Demo',
+    activityimg2: 'images/github.svg',
+    activitylink2: 'https://github.com/JiakangChenBuff/chrome-image-classifier',
+    activitydesc2: 'Activity Repo',
     activityimg3: '',
     activitylink3: '#',
+    activitydesc3: '',
     activityimg4: '',
     activitylink4: '#',
+    activitydesc4: '',
   },
   {
     name: 'Key ML Models P. 1',
@@ -109,12 +115,16 @@ let competitions = [
     link44: '#',
     activityimg1: '',
     activitylink1: '#',
+    activitydesc1: '',
     activityimg2: '',
     activitylink2: '#',
+    activitydesc2: '',
     activityimg3: '',
     activitylink3: '#',
+    activitydesc3: '',
     activityimg4: '',
     activitylink4: '#',
+    activitydesc4: '',
   },
   {
     name: 'Key ML Models P. 2',
@@ -167,12 +177,16 @@ let competitions = [
     link44: '#',
     activityimg1: '',
     activitylink1: '#',
+    activitydesc1: '',
     activityimg2: '',
     activitylink2: '#',
+    activitydesc2: '',
     activityimg3: '',
     activitylink3: '#',
+    activitydesc3: '',
     activityimg4: '',
     activitylink4: '#',
+    activitydesc4: '',
   },
   {
     name: 'Neural Networks',
@@ -225,12 +239,16 @@ let competitions = [
     link44: '#',
     activityimg1: '',
     activitylink1: '#',
+    activitydesc1: '',
     activityimg2: '',
     activitylink2: '#',
+    activitydesc2: '',
     activityimg3: '',
     activitylink3: '#',
+    activitydesc3: '',
     activityimg4: '',
     activitylink4: '#',
+    activitydesc4: '',
   },
   {
     name: 'Computer Vision',
@@ -283,12 +301,16 @@ let competitions = [
     link44: '#',
     activityimg1: '',
     activitylink1: '#',
+    activitydesc1: '',
     activityimg2: '',
     activitylink2: '#',
+    activitydesc2: '',
     activityimg3: '',
     activitylink3: '#',
+    activitydesc3: '',
     activityimg4: '',
     activitylink4: '#',
+    activitydesc4: '',
   },
   {
     name: 'Natural Language',
@@ -341,12 +363,16 @@ let competitions = [
     link44: '#',
     activityimg1: '',
     activitylink1: '#',
+    activitydesc1: '',
     activityimg2: '',
     activitylink2: '#',
+    activitydesc2: '',
     activityimg3: '',
     activitylink3: '#',
+    activitydesc3: '',
     activityimg4: '',
     activitylink4: '#',
+    activitydesc4: '',
   },
   {
     name: 'GANs & Reinforcement',
@@ -399,12 +425,16 @@ let competitions = [
     link44: '#',
     activityimg1: '',
     activitylink1: '#',
+    activitydesc1: '',
     activityimg2: '',
     activitylink2: '#',
+    activitydesc2: '',
     activityimg3: '',
     activitylink3: '#',
+    activitydesc3: '',
     activityimg4: '',
     activitylink4: '#',
+    activitydesc4: '',
   },
 ];
 
@@ -435,15 +465,16 @@ const displayComps = (comps) => {
                   </div>
                   <div class="box-bottom">
                     <div class="left">
-                      <a href=${comp.link11}>${comp.mat11}</a>
-                      <a href=${comp.link12}>${comp.mat12}</a>
-                      <a href=${comp.link13}>${comp.mat13}</a>
-                      <a href=${comp.link14}>${comp.mat14}</a>
+                      <a href=${comp.link11} target="_blank">${comp.mat11}</a>
+                      <a href=${comp.link12} target="_blank">${comp.mat12}</a>
+                      <a href=${comp.link13} target="_blank">${comp.mat13}</a>
+                      <a href=${comp.link14} target="_blank">${comp.mat14}</a>
                     </div>
                     <div class="right">
-                      <a href=${comp.activitylink1}><img src=${
+                      <a href=${comp.activitylink1} target="_blank"><img src=${
         comp.activityimg1
       }></a>
+                      <p>${comp.activitydesc1}</p>
                     </div>
                   </div>
                 </div>
@@ -454,15 +485,16 @@ const displayComps = (comps) => {
                   </div>
                   <div class="box-bottom">
                     <div class="left">
-                      <a href=${comp.link21}>${comp.mat21}</a>
-                      <a href=${comp.link22}>${comp.mat22}</a>
-                      <a href=${comp.link23}>${comp.mat23}</a>
-                      <a href=${comp.link24}>${comp.mat24}</a>
+                      <a href=${comp.link21} target="_blank">${comp.mat21}</a>
+                      <a href=${comp.link22} target="_blank">${comp.mat22}</a>
+                      <a href=${comp.link23} target="_blank">${comp.mat23}</a>
+                      <a href=${comp.link24} target="_blank">${comp.mat24}</a>
                     </div>
                     <div class="right">
-                      <a href=${comp.activitylink2}><img src=${
+                      <a href=${comp.activitylink2} target="_blank"><img src=${
         comp.activityimg2
       }></a>
+                      <p>${comp.activitydesc2}</p>
                     </div>
                   </div>
                 </div>
@@ -473,15 +505,16 @@ const displayComps = (comps) => {
                   </div>
                   <div class="box-bottom">
                     <div class="left">
-                      <a href=${comp.link31}>${comp.mat31}</a>
-                      <a href=${comp.link32}>${comp.mat32}</a>
-                      <a href=${comp.link33}>${comp.mat33}</a>
-                      <a href=${comp.link34}>${comp.mat34}</a>
+                      <a href=${comp.link31} target="_blank">${comp.mat31}</a>
+                      <a href=${comp.link32} target="_blank">${comp.mat32}</a>
+                      <a href=${comp.link33} target="_blank">${comp.mat33}</a>
+                      <a href=${comp.link34} target="_blank">${comp.mat34}</a>
                     </div>
                     <div class="right">
-                      <a href=${comp.activitylink3}><img src=${
+                      <a href=${comp.activitylink3} target="_blank"><img src=${
         comp.activityimg3
       }></a>
+                      <p>${comp.activitydesc3}</p>
                     </div>
                   </div>
                 </div>
@@ -492,15 +525,16 @@ const displayComps = (comps) => {
                   </div>
                   <div class="box-bottom">
                     <div class="left">
-                      <a href=${comp.link41}>${comp.mat41}</a>
-                      <a href=${comp.link42}>${comp.mat42}</a>
-                      <a href=${comp.link43}>${comp.mat43}</a>
-                      <a href=${comp.link44}>${comp.mat44}</a>
+                      <a href=${comp.link41} target="_blank">${comp.mat41}</a>
+                      <a href=${comp.link42} target="_blank">${comp.mat42}</a>
+                      <a href=${comp.link43} target="_blank">${comp.mat43}</a>
+                      <a href=${comp.link44} target="_blank">${comp.mat44}</a>
                     </div>
                     <div class="right">
-                      <a href=${comp.activitylink4}><img src=${
+                      <a href=${comp.activitylink4} target="_blank"><img src=${
         comp.activityimg4
       }></a>
+                      <p>${comp.activitydesc4}</p>
                     </div>
                   </div>
                 </div>
@@ -509,7 +543,7 @@ const displayComps = (comps) => {
             <div class="modal-right">
               <img data-close-button class="close-button" src="images/exit.svg"> </img>
               <div class="right-card">
-                <a id="kaggle" href=${comp.kaggle}>
+                <a id="kaggle" href=${comp.kaggle} target="_blank">
                   <img class="kaggle" src="images/kaggle.svg"> </img>
                 </a>
               </div>

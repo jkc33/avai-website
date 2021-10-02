@@ -545,8 +545,13 @@ input {
 
               .box-bottom {
                 display: grid;
-                grid-template-columns: 18vw 4vw;
+                grid-template-columns: 17vw 5vw;
                 align-items: center;
+
+                .left {
+                  align-self: start;
+                  padding-top: 0.4vw;
+                }
 
                 a {
                   display: block;
@@ -556,10 +561,21 @@ input {
                   font-size: 0.9vw;
                 }
 
+                .right {
+                  display: grid;
+                  align-self: center;
+                  padding-top: 0.3vw;
+                }
+
                 .right a {
                   width: 4vw;
                   height: 4vw;
-                  justify-self: end;
+                  justify-self: center;
+                }
+
+                .right p {
+                  justify-self: center;
+                  font-size: 0.65vw;
                 }
               }
             }

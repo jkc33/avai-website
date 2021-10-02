@@ -636,11 +636,18 @@ input {
 .compete-container #competition-list .modal.active .modal-container .modal-left .left-links .left-card .box-bottom {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 18vw 4vw;
-      grid-template-columns: 18vw 4vw;
+  -ms-grid-columns: 17vw 5vw;
+      grid-template-columns: 17vw 5vw;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.compete-container #competition-list .modal.active .modal-container .modal-left .left-links .left-card .box-bottom .left {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  padding-top: 0.4vw;
 }
 
 .compete-container #competition-list .modal.active .modal-container .modal-left .left-links .left-card .box-bottom a {
@@ -651,11 +658,25 @@ input {
   font-size: 0.9vw;
 }
 
+.compete-container #competition-list .modal.active .modal-container .modal-left .left-links .left-card .box-bottom .right {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row-align: center;
+      align-self: center;
+  padding-top: 0.3vw;
+}
+
 .compete-container #competition-list .modal.active .modal-container .modal-left .left-links .left-card .box-bottom .right a {
   width: 4vw;
   height: 4vw;
-  -ms-grid-column-align: end;
-      justify-self: end;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.compete-container #competition-list .modal.active .modal-container .modal-left .left-links .left-card .box-bottom .right p {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  font-size: 0.65vw;
 }
 
 .compete-container #competition-list .modal.active .modal-container .modal-left .left-links .left-card:hover {
