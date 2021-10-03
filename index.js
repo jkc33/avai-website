@@ -4,7 +4,7 @@ let competitions = [
     id: 'section1',
     number: 'Section 1',
     image: 'images/comp-1.svg',
-    kaggle: '#',
+    kaggle: 'https://www.kaggle.com/c/avai-first-ml-competition/overview',
     date1: '09/28 - Topic 1.1',
     topic1: 'Intro Meeting',
     date2: '10/05 - Topic 1.2',
