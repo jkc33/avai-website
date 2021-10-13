@@ -545,7 +545,7 @@ input {
 
               .box-bottom {
                 display: grid;
-                grid-template-columns: 17vw 5vw;
+                grid-template-columns: 15.5vw 6.5vw;
                 align-items: center;
 
                 .left {
@@ -576,6 +576,10 @@ input {
                 .right p {
                   justify-self: center;
                   font-size: 0.65vw;
+                }
+
+                .right img {
+                  border-radius: 0.5vw;
                 }
               }
             }

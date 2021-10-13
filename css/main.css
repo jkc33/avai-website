@@ -636,8 +636,8 @@ input {
 .compete-container #competition-list .modal.active .modal-container .modal-left .left-links .left-card .box-bottom {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 17vw 5vw;
-      grid-template-columns: 17vw 5vw;
+  -ms-grid-columns: 15.5vw 6.5vw;
+      grid-template-columns: 15.5vw 6.5vw;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -677,6 +677,10 @@ input {
   -ms-grid-column-align: center;
       justify-self: center;
   font-size: 0.65vw;
+}
+
+.compete-container #competition-list .modal.active .modal-container .modal-left .left-links .left-card .box-bottom .right img {
+  border-radius: 0.5vw;
 }
 
 .compete-container #competition-list .modal.active .modal-container .modal-left .left-links .left-card:hover {
