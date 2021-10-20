@@ -12,7 +12,7 @@ let competitions = [
     date3: '10/12 - Topic 1.3',
     topic3: 'ML Pipeline',
     date4: '10/19 - Topic 1.4',
-    topic4: 'TBD',
+    topic4: 'ML Pipeline Review Game',
     prize1: 'TBD',
     prize2: 'TBD',
     prize3: 'TBD',
