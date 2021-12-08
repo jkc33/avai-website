@@ -127,9 +127,9 @@ let competitions = [
     activityimg3: 'images/kaggle_logo.svg',
     activitylink3: 'https://www.kaggle.com/jiakangchen2/7th-meeting/notebook',
     activitydesc3: 'CTF Link',
-    activityimg4: '',
-    activitylink4: '#',
-    activitydesc4: '',
+    activityimg4: 'images/kaggle_logo.svg',
+    activitylink4: 'https://www.kaggle.com/jiakangchen2/7th-meeting/notebook',
+    activitydesc4: 'CTF Link',
   },
   {
     name: 'Key ML Models P. 2',
